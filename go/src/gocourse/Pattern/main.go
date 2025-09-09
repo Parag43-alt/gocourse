@@ -9,4 +9,13 @@ func main() {
 	fmt.Println()
 
 	Pattern2()
+
+	fmt.Println()
+
+	pattern3()
+
+	fmt.Println()
+
+	pattern4()
+
 }
