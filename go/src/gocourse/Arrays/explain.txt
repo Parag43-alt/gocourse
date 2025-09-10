@@ -1,0 +1,37 @@
+// Step 1: Declare an array of 5 integers, all initialized to 0 by default.
+	// idhar iska [5]int matlab hai ki array mein 5 elements honge aur sabhi integers honge.
+	// default value 0 hoti hai integers ki.
+	// apn ne yaha pe array ka size aur type define kya hai. 
+    
+    
+    (var numbers [5]int)
+
+    // Step 2: Assign value 10 to the first element (index 0).
+	// array ka index 0 se start hota hai.
+	// isliye pehla element index 0 pe hoga.
+	// apn ne yaha pe array ke first element ko 10 assign kya hai.
+	// aur ye kaam apn ne direct index ke through kiya hai
+
+    numbers[0] = 10
+
+    
+	// Step 3: Assign value 20 to the second element (index 1).
+	numbers[1] = 20
+
+	// Step 4: Assign value 30 to the third element (index 2).
+	numbers[2] = 30
+
+	// Step 5: Print the entire array.
+	// Output: [10 20 30 0 0]
+	// 0 ki value default hoti hai jab apn array declare karte hain.
+	// kyunki apn ne sirf first 3 elements ko hi value di hai.
+	// baki ke 2 elements ki value default 0 hi rahegi
+	// kyuki array yaha pe integers ka hai.
+	// aur yaha pe ek baar mai pura krta hai chahe uska type koi bhi ho
+
+	fmt.Println(numbers)
+
+	// Step 6: Print the value at index 1 (second element).
+	//  yaha bas apn ne index 1 ka value print karwaya hai
+	// Output: 20
+	fmt.Println(numbers[1])
