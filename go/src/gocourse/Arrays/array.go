@@ -46,4 +46,9 @@ func main() {
 	var number = [5]int{1, 2}
 	fmt.Println(number)
 
+	// assigning value to specific index
+
+	num := [5]int{1: 10, 3: 30}
+	fmt.Println(num)
+
 }
