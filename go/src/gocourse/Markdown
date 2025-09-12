@@ -1,0 +1,38 @@
+# Main Heading (Project / Topic Name)
+## Sub Heading (Algorithm / Function)
+### Small Heading (Step or Detail)
+
+---
+
+## ✨ Text Formatting
+**Bold Text**  
+*Italic Text*  
+***Bold + Italic Text***  
+`Inline code example`
+
+---
+
+## 📋 Lists
+### Unordered List
+- Point One
+- Point Two
+  - Sub point
+
+### Ordered List
+1. Step one
+2. Step two
+3. Step three
+
+---
+
+## 💻 Code Blocks
+Inline: `fmt.Println("Hello")`
+
+Go code example:
+```go
+package main
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!") // Print Hello
+}
