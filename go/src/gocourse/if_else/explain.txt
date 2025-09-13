@@ -1,0 +1,60 @@
+package main
+
+import "fmt"
+
+func main() {
+    age := 20   // Example variable for age
+    marks := 75 // Example variable for marks
+
+    // ---------------------------
+    // 1. Simple if
+    // ---------------------------
+    if age >= 18 {
+        fmt.Println("Adult") 
+        // Ye tab chalega jab age 18 ya usse zyada ho
+    }
+
+    // ---------------------------
+    // 2. if-else
+    // ---------------------------
+    if marks >= 33 {
+        fmt.Println("Pass")
+        // Agar marks 33 ya usse zyada hain to pass
+    } else {
+        fmt.Println("Fail")
+        // Agar marks 33 se kam hain to fail
+    }
+
+    // ---------------------------
+    // 3. if - else if - else chain
+    // ---------------------------
+    if marks >= 90 {
+        fmt.Println("Merit List")
+        // Agar marks 90 ya zyada hain
+    } else if marks >= 50 {
+        fmt.Println("Pass")
+        // Agar marks 50 se zyada hain (but 90 se kam)
+    } else {
+        fmt.Println("Fail")
+        // Agar dono upar wali condition false ho gayi
+    }
+
+    // ---------------------------
+    // 4. Multiple conditions (AND)
+    // ---------------------------
+    if age >= 18 && age <= 25 {
+        fmt.Println("College Student Age")
+        // Ye tab chalega jab dono condition true ho
+        // age 18 se zyada AND age 25 se kam ya barabar
+    }
+
+    // ---------------------------
+    // 5. Multiple conditions (OR)
+    // ---------------------------
+    if marks < 33 || marks > 100 {
+        fmt.Println("Invalid Marks")
+        // Ye tab chalega jab ek bhi condition true ho
+        // marks 33 se kam OR marks 100 se zyada
+    }
+}
+

@@ -1,0 +1,81 @@
+f ke andar hi variable declare kar sakte ho (if x := 10; x > 5 {...})
+
+switch-case me break ki zarurat nahi hoti (default break hota hai)
+
+ek case me multiple values allowed hain (case "A", "B":)
+
+switch bina condition ke likh sakte ho (acts like if-else ladder)
+
+
+package main
+
+import "fmt"
+
+func main() {
+    // --------------------------------------
+    // 1. if ke andar hi variable declare karna
+    // --------------------------------------
+    if age := 20; age >= 18 {
+        fmt.Println("Adult - variable declared inside if")
+        // Yaha 'age' sirf is if block ke andar kaam karega
+        // Baaki languages (C/Java) me usually aisa nahi hota
+    }
+
+    // --------------------------------------
+    // 2. Short declaration with if-else
+    // --------------------------------------
+    if marks := 85; marks >= 90 {
+        fmt.Println("Merit")
+    } else if marks >= 33 {
+        fmt.Println("Pass")
+    } else {
+        fmt.Println("Fail")
+    }
+    // Yaha 'marks' sirf if-else ke andar hi valid hai
+
+    // --------------------------------------
+    // 3. switch without break (unique in Go)
+    // --------------------------------------
+    day := 3
+    switch day {
+    case 1:
+        fmt.Println("Monday")
+    case 2:
+        fmt.Println("Tuesday")
+    case 3:
+        fmt.Println("Wednesday")
+    default:
+        fmt.Println("Other Day")
+    }
+    // Go me switch-case me "break" likhne ki zarurat nahi
+    // wo automatic case ke baad ruk jata hai
+
+    // --------------------------------------
+    // 4. switch with multiple conditions
+    // --------------------------------------
+    grade := "B"
+    switch grade {
+    case "A", "B":
+        fmt.Println("Good grade")
+    case "C", "D":
+        fmt.Println("Average grade")
+    default:
+        fmt.Println("Poor grade")
+    }
+    // Ek case ke andar multiple values bhi check kar sakte ho
+
+    // --------------------------------------
+    // 5. switch without condition (works like if-else ladder)
+    // --------------------------------------
+    marks := 70
+    switch {
+    case marks >= 90:
+        fmt.Println("Merit List")
+    case marks >= 50:
+        fmt.Println("Pass")
+    default:
+        fmt.Println("Fail")
+    }
+    // Yaha switch ke andar condition hi nahi di
+    // ye "if-else if-else" ki tarah kaam karta hai
+}
